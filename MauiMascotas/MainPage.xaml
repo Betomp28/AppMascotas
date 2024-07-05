@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMascotas.MainPage" 
+             Title="login" BackgroundColor="Black">
+                   
+    
+
+    <ScrollView>
+      
+        <Grid RowDefinitions="3*,7*">
+            <Image Grid.Row="0" Aspect="Fill" Source="mascota.jpg"/>
+            
+            <Grid ColumnDefinitions="*,*">
+            <Image Aspect="AspectFit" 
+             HeightRequest="120"
+             Source="dotnet_bot.png"/>
+
+            </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <RoundRectangle Margin="-15,-15,-20,-15"
+                                    CornerRadius="50,50,0,0"
+                                    Fill="White"/>
+
+                <VerticalStackLayout Margin="30,0,30,0">
+                    <Label FontAttributes="Bold"
+                           FontFamily="bold"
+                            FontSize="Medium" 
+                           Text="Bienvenido"
+                           TextColor="Black"/>
+                    <Label FontFamily="medium"
+                           Text="por que es un placer cuidar de nuestras mascotas"
+                           TextColor="Black"/>
+                    <Grid Margin="0,30,0,0" ColumnDefinitions=".2*,.8*">
+                        <RoundRectangle Background="Gray"
+                                        CornerRadius="10"
+                                        HeightRequest="60"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        WidthRequest="60"/>
+                        
+                        <Entry Grid.Column="1" Placeholder="Email" Text="" TextColor="black" VerticalOptions="Center"/>
+                    </Grid>
+                    
+                     <Grid Grid.Column="2"  Margin="0,10,0,0" ColumnDefinitions=".2*,.8*">
+                        <RoundRectangle Background="Gray"
+                                        CornerRadius="10"
+                                        HeightRequest="60"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        WidthRequest="60"/>
+                        <Entry Grid.Column="2" Placeholder="Password" Text="" TextColor="Black" VerticalOptions="Center"/>
+                        </Grid>
+                    <Button Margin="0,20,0,0"
+                            x:Name="btIngresar"
+                            BackgroundColor="Purple"
+                            BorderColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="Iniciar Sesion"
+                            TextColor="White"
+                            Clicked="btIngresar_Clicked"/>
+                    <Button Margin="0,30,0,0"
+                            x:Name="btregistrarse"
+                            BackgroundColor="Purple"
+                              BorderColor="Black"
+                             FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="Registrarse"
+                           TextColor="White"
+                            Clicked="btregistrarse_Clicked"/>
+                    <Label Margin="0,30,0,0"
+                           x:Name="btrecuperarcontrasena"
+                           HorizontalOptions="Center"
+                           Text="olvidaste tu contrasena"
+                           TextColor="Purple"
+                           TextDecorations="Underline">
+                        
+                        <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RecuperearContrasena" />
+                    </Label.GestureRecognizers>
+                    </Label>
+
+
+
+
+
+                </VerticalStackLayout>
+                </Grid>
+            
+            
+        </Grid>
+        
+           
+    </ScrollView>
+
+</ContentPage>

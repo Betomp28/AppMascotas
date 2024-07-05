@@ -1,0 +1,7 @@
+C:\Users\betom\source\repos\Logica_app_Mascotas\bin\Debug\Logica_app_Mascotas.exe.config
+C:\Users\betom\source\repos\Logica_app_Mascotas\bin\Debug\Logica_app_Mascotas.exe
+C:\Users\betom\source\repos\Logica_app_Mascotas\bin\Debug\Logica_app_Mascotas.pdb
+C:\Users\betom\source\repos\Logica_app_Mascotas\obj\Debug\Logica_app_Mascotas.csproj.AssemblyReference.cache
+C:\Users\betom\source\repos\Logica_app_Mascotas\obj\Debug\Logica_app_Mascotas.csproj.CoreCompileInputs.cache
+C:\Users\betom\source\repos\Logica_app_Mascotas\obj\Debug\Logica_app_Mascotas.exe
+C:\Users\betom\source\repos\Logica_app_Mascotas\obj\Debug\Logica_app_Mascotas.pdb

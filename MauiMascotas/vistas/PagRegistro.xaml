@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiMascotas.vistas.PagRegistro"
+             Title="PagRegistro"
+             >
+
+
+    <ScrollView>
+        <Frame BackgroundColor="White" BorderColor="MediumPurple" HeightRequest="650" WidthRequest="350">
+            <ScrollView>
+            <VerticalStackLayout>
+                <VerticalStackLayout
+                     Padding="10,50"
+                       Spacing="20">
+                   
+                <Frame BackgroundColor="White" BorderColor="Black" >
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Entry Grid.Row="1" Placeholder="Nombre" Text="" TextColor="Black" VerticalOptions="Center" MaxLength="15"/>
+                            
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="White" BorderColor="MediumPurple">
+                        <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                        <Entry Grid.Row="2" Placeholder="Apellido" Text="" TextColor="Black" VerticalOptions="Center" MaxLength="15"/>
+                        </Grid>
+                    </Frame>
+                    <Frame BackgroundColor="White" BorderColor="MediumPurple">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Entry Grid.Row="3" Placeholder="Correo Electronico" Text="" TextColor="Black" VerticalOptions="Center" MaxLength="50"/>
+                        </Grid>
+                        
+                    </Frame>
+                        <Frame BackgroundColor="White" BorderColor="MediumPurple">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Entry Grid.Row="4" Placeholder="Contraseña" Text="" TextColor="Black" VerticalOptions="Center" MaxLength="8"/>
+                            </Grid>
+                        </Frame>
+                        <Frame BackgroundColor="White" BorderColor="MediumPurple">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Entry Grid.Row="5" Placeholder="Confirmar Contraseña" Text="" TextColor="Black" VerticalOptions="Center" MaxLength="8"/>
+                            </Grid>
+                        </Frame>
+                    <Button Margin="0,20,0,0"
+                            x:Name="btIngresar"
+                            BackgroundColor="Purple"
+                            BorderColor="White"
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="Registrarse"
+                            Clicked="btIngresar_Clicked" />
+
+                </VerticalStackLayout>
+
+
+
+
+                    
+                </VerticalStackLayout>
+                </ScrollView>
+        </Frame>
+    </ScrollView>
+    
+</ContentPage>

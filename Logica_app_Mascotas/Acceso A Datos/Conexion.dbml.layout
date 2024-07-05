@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Conexion">
+  <DataContextMoniker Name="/ConexionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e48da90a-dcf5-4525-b557-160a32299dce" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ConexionDataContext/TB_USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88f94395-16e5-4b24-a0c0-86aaa033d93a" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6306758d-4e29-4aae-b8d7-1dbe29a88a34" absoluteBounds="0.5, 3.25, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/ConexionDataContext/TB_SESION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="af1161e3-a4b1-457e-af82-d0cd3128698f" absoluteBounds="0.515, 3.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 2.84780110677083); (1.5 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ConexionDataContext/TB_USUARIO/TB_USUARIO_TB_SESION" />
+      <nodes>
+        <classShapeMoniker Id="e48da90a-dcf5-4525-b557-160a32299dce" />
+        <classShapeMoniker Id="6306758d-4e29-4aae-b8d7-1dbe29a88a34" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
